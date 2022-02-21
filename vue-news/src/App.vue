@@ -13,9 +13,7 @@ export default {
     Header
   },
   methods:{
-    fetchData(){
-      
-    }
+    
   }
 }
 </script>
