@@ -9,7 +9,7 @@ export default createRouter ({
     //pages
     routes:[
         {
-            path:'/',
+            path:'/news',
             component:NewsView
         },
         {
