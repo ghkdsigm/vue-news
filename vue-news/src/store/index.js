@@ -24,6 +24,7 @@ export default createStore({
             fetchAskList()
             .then(res => {
                 context.commit('SET_ASKS', res.data)
+                console.log(res.data)
             })
             .catch(error => {
                 console.log(error);
