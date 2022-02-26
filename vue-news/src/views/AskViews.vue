@@ -1,22 +1,16 @@
 <template>
-   <div v-for="ask in asks" :key="ask">{{ask.title}}</div>   
+   <ListItem />    
 </template>
 
 <script>
-import { mapState } from 'vuex'
-
+import ListItem from '../components/ListItem.vue'
 export default {
-    computed:{
-        ...mapState({
-            asks: state => state.asks
-        })
-    },
-    created(){
-        this.$store.dispatch('FETCH_ASK')
+    components:{
+        ListItem
     }
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
